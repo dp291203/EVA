@@ -1,0 +1,15 @@
+# Default initial positions for eva's ros2_control fake system
+
+initial_positions:
+  leftbicep: 0
+  leftelbow: 0
+  leftforearm: 0
+  leftshoulder_pitch: 0
+  leftshoulder_roll: 0
+  leftwrist: 0
+  rightbicep: 0
+  rightelbow: 0
+  rightforearm: 0
+  rightshoulder_pitch: 0
+  rightshoulder_roll: 0
+  rightwrist: 0

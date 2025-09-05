@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This does not replace URDF, and is not an extension of URDF.
+    This is a format for representing semantic information about the robot structure.
+    A URDF file must exist for this robot as well, where the joints and the links that are referenced are defined
+-->
+<robot name="eva">
+    <!--GROUPS: Representation of a set of joints and links. This can be useful for specifying DOF to plan for, defining arms, end effectors, etc-->
+    <!--LINKS: When a link is specified, the parent joint of that link (if it exists) is automatically included-->
+    <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
+    <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
+    <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
+    <group name="Left_arm">
+        <link name="bodytoshoulder_left"/>
+        <link name="shouldertobicep_left"/>
+        <link name="biceptoelbow_left"/>
+        <link name="elbow_left"/>
+        <link name="forearm_left"/>
+        <link name="wrist_left"/>
+        <joint name="leftbicep"/>
+        <joint name="leftelbow"/>
+        <joint name="leftforearm"/>
+        <joint name="leftshoulder_pitch"/>
+        <joint name="leftshoulder_roll"/>
+        <joint name="leftwrist"/>
+        <chain base_link="base_link" tip_link="wrist_left"/>
+    </group>
+    <group name="Right_arm">
+        <link name="bodytoshoulder_right"/>
+        <link name="shouldertobicep_right"/>
+        <link name="biceptoelbow_right"/>
+        <link name="elbow_right"/>
+        <link name="forearm_right"/>
+        <link name="wrist_right"/>
+        <joint name="rightbicep"/>
+        <joint name="rightelbow"/>
+        <joint name="rightforearm"/>
+        <joint name="rightshoulder_pitch"/>
+        <joint name="rightshoulder_roll"/>
+        <joint name="rightwrist"/>
+        <chain base_link="base_link" tip_link="wrist_right"/>
+    </group>
+    <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
+    <end_effector name="left_hand" parent_link="bodytoshoulder_left" group="Left_arm" parent_group="Left_arm"/>
+    <end_effector name="right_hand" parent_link="bodytoshoulder_right" group="Right_arm" parent_group="Right_arm"/>
+    <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
+    <virtual_joint name="eva" type="floating" parent_frame="base_link" child_link="base_link"/>
+</robot>
