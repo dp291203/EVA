@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="evaurdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.023935 0.82614 -0.32916"
+        rpy="0 0 0" />
+      <mass
+        value="8.7231" />
+      <inertia
+        ixx="0.43786"
+        ixy="0.0060048"
+        ixz="0.0014775"
+        iyy="0.1169"
+        iyz="-0.01918"
+        izz="0.44107" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="neckyaw">
+    <inertial>
+      <origin
+        xyz="3.16271666052706E-08 0.026320877492739 6.34242214303526E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.126175040674598" />
+      <inertia
+        ixx="8.27555077333756E-05"
+        ixy="4.03777936635689E-19"
+        ixz="-6.90908142853906E-11"
+        iyy="0.000117501706916793"
+        iyz="-5.32226318368442E-20"
+        izz="0.000117550416671382" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/neckyaw.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/neckyaw.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="neck"
+    type="continuous">
+    <origin
+      xyz="0 0.329 1.4601"
+      rpy="1.5708 0 0.020051" />
+    <parent
+      link="base_link" />
+    <child
+      link="neckyaw" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="head">
+    <inertial>
+      <origin
+        xyz="0.000991055951199262 0.110877142761753 -0.00690969693007598"
+        rpy="0 0 0" />
+      <mass
+        value="2.56826417178078" />
+      <inertia
+        ixx="0.00967495550802753"
+        ixy="9.79860347384167E-05"
+        ixz="0.00030219746885624"
+        iyy="0.00769698350456901"
+        iyz="-0.00044423599956577"
+        izz="0.0109246801010029" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/head.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/head.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_pitch"
+    type="revolute">
+    <origin
+      xyz="0 0.05 0"
+      rpy="-3.1077 0 3.1416" />
+    <parent
+      link="neckyaw" />
+    <child
+      link="head" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="drivelink">
+    <inertial>
+      <origin
+        xyz="0.442608414500854 0.38497256826904 0.422874023606937"
+        rpy="0 0 0" />
+      <mass
+        value="10.5110387047355" />
+      <inertia
+        ixx="0.0913808420198123"
+        ixy="-5.36278981288798E-08"
+        ixz="-1.93903145120642E-06"
+        iyy="0.194286246334757"
+        iyz="0.00300227344017714"
+        izz="0.123956245421858" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/drivelink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/drivelink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis"
+    type="fixed">
+    <origin
+      xyz="0.43815 -0.14249 -0.30251"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="drivelink" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="omniwheelone">
+    <inertial>
+      <origin
+        xyz="-1.51961776495568E-15 3.63598040564739E-15 -0.0189983350650456"
+        rpy="0 0 0" />
+      <mass
+        value="0.204540248590815" />
+      <inertia
+        ixx="6.51400050027573E-05"
+        ixy="-3.89635155736978E-20"
+        ixz="-1.30530114545276E-20"
+        iyy="6.5140005002757E-05"
+        iyz="-4.82617695539781E-21"
+        izz="0.000123773510488937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/omniwheelone.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/omniwheelone.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="omnione"
+    type="continuous">
+    <origin
+      xyz="0.60603 0.35151 0.19199"
+      rpy="3.1416 0 1.9986" />
+    <parent
+      link="drivelink" />
+    <child
+      link="omniwheelone" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="omniwheeltwo">
+    <inertial>
+      <origin
+        xyz="1.79023462720806E-15 3.02535774210355E-15 0.0190016649349595"
+        rpy="0 0 0" />
+      <mass
+        value="0.204540248590815" />
+      <inertia
+        ixx="6.51400050027572E-05"
+        ixy="-3.30342849429177E-20"
+        ixz="-8.63152636897224E-20"
+        iyy="6.51400050027571E-05"
+        iyz="1.50688845505087E-19"
+        izz="0.000123773510488937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/omniwheeltwo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/omniwheeltwo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="omnitwo"
+    type="continuous">
+    <origin
+      xyz="0.184651484049627 0.35150697340092 0.277611701761818"
+      rpy="1.57079632679492 1.34484068342673 1.57079632679492" />
+    <parent
+      link="drivelink" />
+    <child
+      link="omniwheeltwo" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="omniwheelthree">
+    <inertial>
+      <origin
+        xyz="-6.66133814775094E-16 8.88178419700125E-16 -0.0189983350650453"
+        rpy="0 0 0" />
+      <mass
+        value="0.204540248590815" />
+      <inertia
+        ixx="6.51400050027575E-05"
+        ixy="-4.74338450462408E-20"
+        ixz="-8.0155485795962E-21"
+        iyy="6.51400050027573E-05"
+        iyz="-3.02182594969937E-22"
+        izz="0.000123773510488937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/omniwheelthree.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/omniwheelthree.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="omnithree"
+    type="continuous">
+    <origin
+      xyz="0.270276484049601 0.35150697340092 0.660986701761786"
+      rpy="3.14159265358979 0 1.72464128224183" />
+    <parent
+      link="drivelink" />
+    <child
+      link="omniwheelthree" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="omniwheelfour">
+    <inertial>
+      <origin
+        xyz="-2.99760216648792E-15 8.71525074330748E-15 -0.0189983350650284"
+        rpy="0 0 0" />
+      <mass
+        value="0.204540248590815" />
+      <inertia
+        ixx="6.51400050027574E-05"
+        ixy="-5.25160427297666E-20"
+        ixz="-1.66126829160778E-20"
+        iyy="6.51400050027572E-05"
+        iyz="3.57292252765053E-20"
+        izz="0.000123773510488937" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/omniwheelfour.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/omniwheelfour.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="omnifour"
+    type="continuous">
+    <origin
+      xyz="0.653651484049575 0.351506973400919 0.613361701761816"
+      rpy="1.57079632679487 -1.20303452089833 -1.57079632679487" />
+    <parent
+      link="drivelink" />
+    <child
+      link="omniwheelfour" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="lidar">
+    <inertial>
+      <origin
+        xyz="8.67191303490234E-08 -4.16025950141646E-05 -0.00869262401284093"
+        rpy="0 0 0" />
+      <mass
+        value="0.0456707581860486" />
+      <inertia
+        ixx="1.43875325113362E-05"
+        ixy="2.88069673475584E-11"
+        ixz="2.07587124017155E-11"
+        iyy="4.00681951932874E-05"
+        iyz="8.08830974764848E-10"
+        izz="4.95648054861963E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/lidar.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.0823529411764706 0.0823529411764706 0.0823529411764706 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/lidar.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rplidar"
+    type="fixed">
+    <origin
+      xyz="0.43815 0.55501 0.20549"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="drivelink" />
+    <child
+      link="lidar" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="bodytoshoulder_right">
+    <inertial>
+      <origin
+        xyz="0.00263342771648528 -0.000381904326435034 -0.101791329772656"
+        rpy="0 0 0" />
+      <mass
+        value="0.248502139688113" />
+      <inertia
+        ixx="0.000283023415082852"
+        ixy="-1.79166914273708E-06"
+        ixz="-1.15794628986197E-06"
+        iyy="0.000194989361172429"
+        iyz="-4.93506033054954E-06"
+        izz="0.000175355523683134" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/bodytoshoulder_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/bodytoshoulder_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_pitch_right"
+    type="revolute">
+    <origin
+      xyz="-0.128 0.329 1.3784"
+      rpy="1.5708 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="bodytoshoulder_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shouldertobicep_right">
+    <inertial>
+      <origin
+        xyz="2.43827998452906E-06 -0.0712361677693647 0.00629386677459493"
+        rpy="0 0 0" />
+      <mass
+        value="0.311132620148244" />
+      <inertia
+        ixx="0.000217096332176796"
+        ixy="9.5632745208136E-09"
+        ixz="4.19621845744866E-09"
+        iyy="0.000233724338410069"
+        iyz="2.24442552162171E-07"
+        izz="0.000282948473150636" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/shouldertobicep_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/shouldertobicep_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_roll_right"
+    type="revolute">
+    <origin
+      xyz="0 0 -0.109"
+      rpy="1.5708 1.5006 1.5402" />
+    <parent
+      link="bodytoshoulder_right" />
+    <child
+      link="shouldertobicep_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="biceptoelbow_right">
+    <inertial>
+      <origin
+        xyz="0.00226170633570522 -0.121150802743996 0.00217982598756478"
+        rpy="0 0 0" />
+      <mass
+        value="0.322166504756656" />
+      <inertia
+        ixx="0.000499509848015228"
+        ixy="6.37128986397841E-07"
+        ixz="2.12146032984303E-07"
+        iyy="0.000225417153482144"
+        iyz="4.42895441259609E-05"
+        izz="0.000351114695137481" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/biceptoelbow_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/biceptoelbow_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bicep_yaw_right"
+    type="revolute">
+    <origin
+      xyz="0 -0.067989 0.00649"
+      rpy="0 -0.028819 0" />
+    <parent
+      link="shouldertobicep_right" />
+    <child
+      link="biceptoelbow_right" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="elbow_right">
+    <inertial>
+      <origin
+        xyz="-0.000942489448175654 -0.0981773354053843 -0.00183959694676156"
+        rpy="0 0 0" />
+      <mass
+        value="0.619505254393955" />
+      <inertia
+        ixx="0.00195424802328122"
+        ixy="3.11768869786834E-06"
+        ixz="3.87441149321461E-08"
+        iyy="0.000406805948188103"
+        iyz="-6.62492714371056E-05"
+        izz="0.00178400103446791" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/elbow_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/elbow_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_elbow"
+    type="revolute">
+    <origin
+      xyz="0 -0.16601 0"
+      rpy="0.042742 0 0" />
+    <parent
+      link="biceptoelbow_right" />
+    <child
+      link="elbow_right" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="forearm_right">
+    <inertial>
+      <origin
+        xyz="0.000908834234954359 -0.0616724923652938 -0.00061476161807944"
+        rpy="0 0 0" />
+      <mass
+        value="0.147692010338907" />
+      <inertia
+        ixx="0.000114169740597726"
+        ixy="8.06746852541554E-08"
+        ixz="-8.46787367963132E-08"
+        iyy="8.57687336842534E-05"
+        iyz="1.38668274392298E-06"
+        izz="0.000161330695875686" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/forearm_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/forearm_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightforearm"
+    type="revolute">
+    <origin
+      xyz="0.0007775 -0.16917 -0.004924"
+      rpy="-3.1416 -0.069099 -3.1416" />
+    <parent
+      link="elbow_right" />
+    <child
+      link="forearm_right" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wrist_right">
+    <inertial>
+      <origin
+        xyz="-0.0131091201964877 -0.0910923584421162 -0.00215606564071213"
+        rpy="0 0 0" />
+      <mass
+        value="0.198690606569326" />
+      <inertia
+        ixx="0.000115889926412523"
+        ixy="-5.06731410346798E-06"
+        ixz="1.56757136729894E-08"
+        iyy="6.84989411093352E-05"
+        iyz="-4.74295817219009E-06"
+        izz="5.82560702668178E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/wrist_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/wrist_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rightwrist"
+    type="revolute">
+    <origin
+      xyz="0.00054195 -0.11687 0"
+      rpy="3.1416 0 3.0543" />
+    <parent
+      link="forearm_right" />
+    <child
+      link="wrist_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="bodytoshoulder_left">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/bodytoshoulder_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/bodytoshoulder_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_pitch_left"
+    type="revolute">
+    <origin
+      xyz="0.128 0.329 1.3784"
+      rpy="1.5721 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="bodytoshoulder_left" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shouldertobicep_left">
+    <inertial>
+      <origin
+        xyz="2.42894895772783E-05 -0.0712019111454516 0.00623568086093679"
+        rpy="0 0 0" />
+      <mass
+        value="0.311661029575735" />
+      <inertia
+        ixx="0.000217110943776403"
+        ixy="-9.64191457713708E-09"
+        ixz="-4.30797153328492E-09"
+        iyy="0.000233732929771828"
+        iyz="2.24558447499004E-07"
+        izz="0.000282971498045027" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/shouldertobicep_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/shouldertobicep_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_roll_left"
+    type="revolute">
+    <origin
+      xyz="-0.109 0 0"
+      rpy="0 0 -0.078105" />
+    <parent
+      link="bodytoshoulder_left" />
+    <child
+      link="shouldertobicep_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="biceptoelbow_left">
+    <inertial>
+      <origin
+        xyz="-0.00222793540274374 -0.113765890557727 0.00222893321975454"
+        rpy="0 0 0" />
+      <mass
+        value="0.322695004938074" />
+      <inertia
+        ixx="0.000499544547889265"
+        ixy="-6.4056274284169E-07"
+        ixz="-2.06051569808937E-07"
+        iyy="0.000225432742859281"
+        iyz="4.42929232554066E-05"
+        izz="0.000351126081349019" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/biceptoelbow_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/biceptoelbow_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bicep_yaw_left"
+    type="revolute">
+    <origin
+      xyz="0 -0.07534 0.00649"
+      rpy="0 -0.073358 0" />
+    <parent
+      link="shouldertobicep_left" />
+    <child
+      link="biceptoelbow_left" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="elbow_left">
+    <inertial>
+      <origin
+        xyz="0.000934861640795537 -0.0981762998130045 -0.00184018945864467"
+        rpy="0 0 0" />
+      <mass
+        value="0.619491777009908" />
+      <inertia
+        ixx="0.00195401589629342"
+        ixy="-3.12692803676324E-06"
+        ixz="-4.84702136384628E-08"
+        iyy="0.000406780941842335"
+        iyz="-6.62878466078583E-05"
+        izz="0.00178376777434231" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/elbow_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/elbow_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_elbow"
+    type="revolute">
+    <origin
+      xyz="0 -0.15866 0"
+      rpy="-0.0024919 0 0" />
+    <parent
+      link="biceptoelbow_left" />
+    <child
+      link="elbow_left" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="forearm_left">
+    <inertial>
+      <origin
+        xyz="-0.000912539179160343 -0.0555357197025999 -0.000630712082974882"
+        rpy="0 0 0" />
+      <mass
+        value="0.147740552985669" />
+      <inertia
+        ixx="0.000114155438032885"
+        ixy="-8.36038796193202E-08"
+        ixz="7.95620243891857E-08"
+        iyy="8.57658027541546E-05"
+        iyz="1.38925271095715E-06"
+        izz="0.00016129985431266" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/forearm_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/forearm_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftforearm"
+    type="revolute">
+    <origin
+      xyz="-0.0007775 -0.17529 -0.004924"
+      rpy="3.1416 -0.14374 -3.1416" />
+    <parent
+      link="elbow_left" />
+    <child
+      link="forearm_left" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wrist_left">
+    <inertial>
+      <origin
+        xyz="0.00254475643397845 -0.0915619172101602 0.00406669283447403"
+        rpy="0 0 0" />
+      <mass
+        value="0.19393770838844" />
+      <inertia
+        ixx="0.000115981448628616"
+        ixy="3.22329730068676E-06"
+        ixz="-8.20657572390409E-07"
+        iyy="6.8044539559402E-05"
+        iyz="4.58500817278768E-06"
+        izz="5.80296015066438E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/wrist_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://evaurdf/meshes/wrist_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="leftwrist"
+    type="revolute">
+    <origin
+      xyz="-0.00054195 -0.11075 0"
+      rpy="0 0 -0.1005" />
+    <parent
+      link="forearm_left" />
+    <child
+      link="wrist_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

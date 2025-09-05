@@ -1,0 +1,55 @@
+running egg_info
+creating ../../build/eva/eva.egg-info
+writing ../../build/eva/eva.egg-info/PKG-INFO
+writing dependency_links to ../../build/eva/eva.egg-info/dependency_links.txt
+writing entry points to ../../build/eva/eva.egg-info/entry_points.txt
+writing requirements to ../../build/eva/eva.egg-info/requires.txt
+writing top-level names to ../../build/eva/eva.egg-info/top_level.txt
+writing manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+reading manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+writing manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/divya/nav/build/eva/build
+creating /home/divya/nav/build/eva/build/lib
+creating /home/divya/nav/build/eva/build/lib/eva
+copying eva/__init__.py -> /home/divya/nav/build/eva/build/lib/eva
+running install
+running install_lib
+creating /home/divya/nav/install/eva/lib/python3.10/site-packages/eva
+copying /home/divya/nav/build/eva/build/lib/eva/__init__.py -> /home/divya/nav/install/eva/lib/python3.10/site-packages/eva
+byte-compiling /home/divya/nav/install/eva/lib/python3.10/site-packages/eva/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/divya/nav/install/eva/share/ament_index
+creating /home/divya/nav/install/eva/share/ament_index/resource_index
+creating /home/divya/nav/install/eva/share/ament_index/resource_index/packages
+copying resource/eva -> /home/divya/nav/install/eva/share/ament_index/resource_index/packages
+copying package.xml -> /home/divya/nav/install/eva/share/eva
+creating /home/divya/nav/install/eva/share/eva/launch
+copying launch/display.launch.py -> /home/divya/nav/install/eva/share/eva/launch
+creating /home/divya/nav/install/eva/share/eva/urdf
+copying urdf/eva.urdf -> /home/divya/nav/install/eva/share/eva/urdf
+creating /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/omni2.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/forearm_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/biceptoelbow_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/shouldertobicep_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/shouldertobicep_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/forearm_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/elbow_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/head.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/omni1.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/wrist_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/elbow_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/bodytoshoulder_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/omni4.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/biceptoelbow_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/neck.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/wrist_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/omni3.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/bodytoshoulder_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+copying meshes/base_link.STL -> /home/divya/nav/install/eva/share/eva/meshes
+running install_egg_info
+Copying ../../build/eva/eva.egg-info to /home/divya/nav/install/eva/lib/python3.10/site-packages/eva-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/divya/nav/build/eva/install.log'

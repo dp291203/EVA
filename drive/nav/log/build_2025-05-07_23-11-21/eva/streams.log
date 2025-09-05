@@ -1,0 +1,43 @@
+[0.547s] Invoking command in '/home/divya/nav/src/eva': PYTHONPATH=/home/divya/nav/build/eva/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/divya/nav/install/eva/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/eva build --build-base /home/divya/nav/build/eva/build install --record /home/divya/nav/build/eva/install.log --single-version-externally-managed install_data
+[0.695s] running egg_info
+[0.695s] writing ../../build/eva/eva.egg-info/PKG-INFO
+[0.701s] writing dependency_links to ../../build/eva/eva.egg-info/dependency_links.txt
+[0.701s] writing entry points to ../../build/eva/eva.egg-info/entry_points.txt
+[0.701s] writing requirements to ../../build/eva/eva.egg-info/requires.txt
+[0.701s] writing top-level names to ../../build/eva/eva.egg-info/top_level.txt
+[0.703s] reading manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+[0.704s] writing manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+[0.704s] running build
+[0.704s] running build_py
+[0.706s] running install
+[0.706s] running install_lib
+[0.707s] running install_data
+[0.709s] copying urdf/evaurdf.urdf -> /home/divya/nav/install/eva/share/eva/urdf
+[0.709s] copying meshes/forearm_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.710s] copying meshes/omniwheeltwo.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.711s] copying meshes/biceptoelbow_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.712s] copying meshes/shouldertobicep_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.712s] copying meshes/shouldertobicep_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.713s] copying meshes/forearm_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.713s] copying meshes/omniwheelthree.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.714s] copying meshes/elbow_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.715s] copying meshes/head.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.717s] copying meshes/lidar.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.718s] copying meshes/neckyaw.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.718s] copying meshes/omniwheelfour.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.719s] copying meshes/wrist_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.721s] copying meshes/elbow_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.722s] copying meshes/bodytoshoulder_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.722s] copying meshes/omniwheelone.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.723s] copying meshes/biceptoelbow_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.724s] copying meshes/drivelink.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.729s] copying meshes/wrist_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.732s] copying meshes/bodytoshoulder_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.732s] copying meshes/base_link.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.734s] running install_egg_info
+[0.736s] removing '/home/divya/nav/install/eva/lib/python3.10/site-packages/eva-0.0.0-py3.10.egg-info' (and everything under it)
+[0.736s] Copying ../../build/eva/eva.egg-info to /home/divya/nav/install/eva/lib/python3.10/site-packages/eva-0.0.0-py3.10.egg-info
+[0.737s] running install_scripts
+[0.751s] Installing odom_publisher script to /home/divya/nav/install/eva/lib/eva
+[0.751s] writing list of installed files to '/home/divya/nav/build/eva/install.log'
+[0.767s] Invoked command in '/home/divya/nav/src/eva' returned '0': PYTHONPATH=/home/divya/nav/build/eva/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/divya/nav/install/eva/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/eva build --build-base /home/divya/nav/build/eva/build install --record /home/divya/nav/build/eva/install.log --single-version-externally-managed install_data

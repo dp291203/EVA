@@ -1,0 +1,57 @@
+[0.388s] Invoking command in '/home/divya/nav/src/eva': PYTHONPATH=/home/divya/nav/build/eva/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/divya/nav/install/eva/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/eva build --build-base /home/divya/nav/build/eva/build install --record /home/divya/nav/build/eva/install.log --single-version-externally-managed install_data
+[0.539s] running egg_info
+[0.539s] creating ../../build/eva/eva.egg-info
+[0.540s] writing ../../build/eva/eva.egg-info/PKG-INFO
+[0.540s] writing dependency_links to ../../build/eva/eva.egg-info/dependency_links.txt
+[0.540s] writing entry points to ../../build/eva/eva.egg-info/entry_points.txt
+[0.540s] writing requirements to ../../build/eva/eva.egg-info/requires.txt
+[0.540s] writing top-level names to ../../build/eva/eva.egg-info/top_level.txt
+[0.540s] writing manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+[0.541s] reading manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+[0.541s] writing manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+[0.541s] running build
+[0.541s] running build_py
+[0.542s] creating /home/divya/nav/build/eva/build
+[0.542s] creating /home/divya/nav/build/eva/build/lib
+[0.542s] creating /home/divya/nav/build/eva/build/lib/eva
+[0.542s] copying eva/__init__.py -> /home/divya/nav/build/eva/build/lib/eva
+[0.542s] running install
+[0.542s] running install_lib
+[0.542s] creating /home/divya/nav/install/eva/lib/python3.10/site-packages/eva
+[0.542s] copying /home/divya/nav/build/eva/build/lib/eva/__init__.py -> /home/divya/nav/install/eva/lib/python3.10/site-packages/eva
+[0.543s] byte-compiling /home/divya/nav/install/eva/lib/python3.10/site-packages/eva/__init__.py to __init__.cpython-310.pyc
+[0.543s] running install_data
+[0.543s] creating /home/divya/nav/install/eva/share/ament_index
+[0.543s] creating /home/divya/nav/install/eva/share/ament_index/resource_index
+[0.543s] creating /home/divya/nav/install/eva/share/ament_index/resource_index/packages
+[0.543s] copying resource/eva -> /home/divya/nav/install/eva/share/ament_index/resource_index/packages
+[0.543s] copying package.xml -> /home/divya/nav/install/eva/share/eva
+[0.543s] creating /home/divya/nav/install/eva/share/eva/launch
+[0.543s] copying launch/display.launch.py -> /home/divya/nav/install/eva/share/eva/launch
+[0.543s] creating /home/divya/nav/install/eva/share/eva/urdf
+[0.543s] copying urdf/eva.urdf -> /home/divya/nav/install/eva/share/eva/urdf
+[0.543s] creating /home/divya/nav/install/eva/share/eva/meshes
+[0.543s] copying meshes/omni2.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.545s] copying meshes/forearm_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.545s] copying meshes/biceptoelbow_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.545s] copying meshes/shouldertobicep_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.546s] copying meshes/shouldertobicep_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.546s] copying meshes/forearm_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.546s] copying meshes/elbow_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.547s] copying meshes/head.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.549s] copying meshes/omni1.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.550s] copying meshes/wrist_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.552s] copying meshes/elbow_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.553s] copying meshes/bodytoshoulder_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.553s] copying meshes/omni4.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.554s] copying meshes/biceptoelbow_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.555s] copying meshes/neck.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.555s] copying meshes/wrist_right.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.557s] copying meshes/omni3.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.559s] copying meshes/bodytoshoulder_left.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.559s] copying meshes/base_link.STL -> /home/divya/nav/install/eva/share/eva/meshes
+[0.566s] running install_egg_info
+[0.567s] Copying ../../build/eva/eva.egg-info to /home/divya/nav/install/eva/lib/python3.10/site-packages/eva-0.0.0-py3.10.egg-info
+[0.568s] running install_scripts
+[0.580s] writing list of installed files to '/home/divya/nav/build/eva/install.log'
+[0.595s] Invoked command in '/home/divya/nav/src/eva' returned '0': PYTHONPATH=/home/divya/nav/build/eva/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/divya/nav/install/eva/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/eva build --build-base /home/divya/nav/build/eva/build install --record /home/divya/nav/build/eva/install.log --single-version-externally-managed install_data

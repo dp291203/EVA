@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'shoulder_joint_1', 'upper_bicep_joint_right', 'lower_bicep_joint_right', 'elbow_right_joint', 'forearm_joint_right', 'wrist_joint_right', 'shoulder_joint_left', 'upper_bicep_joint_left', 'lower_bicep_joint_left', 'elbow_joint_left', 'forearm_left_joint', 'wrist_joint_left', 'neck_joint', 'head_joint', ]

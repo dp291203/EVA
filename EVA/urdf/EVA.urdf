@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="EVA">
+  <link
+    name="Body">
+    <inertial>
+      <origin
+        xyz="-0.107734016351388 0.659731332728757 0.508650513115946"
+        rpy="0 0 0" />
+      <mass
+        value="15.9181025412927" />
+      <inertia
+        ixx="0.1391767266026"
+        ixy="2.3340555615011E-05"
+        ixz="4.3354771729121E-05"
+        iyy="0.178873989376265"
+        iyz="0.0026778021342176"
+        izz="0.269632365734801" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/Body.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/Body.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="shoulder_link_right">
+    <inertial>
+      <origin
+        xyz="0.0659353112926789 -0.000305561125025555 0.00268201715043215"
+        rpy="0 0 0" />
+      <mass
+        value="0.244967847855837" />
+      <inertia
+        ixx="0.000175311345034818"
+        ixy="4.96815477609741E-06"
+        ixz="1.00652784207352E-06"
+        iyy="0.000194343643201104"
+        iyz="9.01843754904755E-07"
+        izz="0.000282432130937247" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/shoulder_link_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/shoulder_link_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_joint_1"
+    type="revolute">
+    <origin
+      xyz="-0.27121 0.68562 1.5983"
+      rpy="1.5475 0 3.1416" />
+    <parent
+      link="Body" />
+    <child
+      link="shoulder_link_right" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="upper_bicep_right">
+    <inertial>
+      <origin
+        xyz="2.43679375366845E-06 -0.071236165615566 0.00629386601906845"
+        rpy="0 0 0" />
+      <mass
+        value="0.311132651783736" />
+      <inertia
+        ixx="0.000217096335824165"
+        ixy="9.54783770621328E-09"
+        ixz="4.18752047663033E-09"
+        iyy="0.000233724350300062"
+        iyz="2.24444630363015E-07"
+        izz="0.000282948497691461" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/upper_bicep_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/upper_bicep_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="upper_bicep_joint_right"
+    type="revolute">
+    <origin
+      xyz="0.072 0 0"
+      rpy="0 0 0.040161" />
+    <parent
+      link="shoulder_link_right" />
+    <child
+      link="upper_bicep_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lower_bicep_right">
+    <inertial>
+      <origin
+        xyz="0.00226161171027361 -0.121107670603483 0.00217991010289464"
+        rpy="0 0 0" />
+      <mass
+        value="0.322166835687232" />
+      <inertia
+        ixx="0.000499521054428143"
+        ixy="6.3595383873861E-07"
+        ixz="2.17092539111734E-07"
+        iyy="0.000225423512304702"
+        iyz="4.42922084439352E-05"
+        izz="0.000351112403798392" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/lower_bicep_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/lower_bicep_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lower_bicep_joint_right"
+    type="revolute">
+    <origin
+      xyz="0 -0.068032 0.00649"
+      rpy="0 0.062891 0" />
+    <parent
+      link="upper_bicep_right" />
+    <child
+      link="lower_bicep_right" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="elbow_right">
+    <inertial>
+      <origin
+        xyz="-0.00094258106431705 -0.0981772987513228 -0.0018394226728532"
+        rpy="0 0 0" />
+      <mass
+        value="0.619512312185736" />
+      <inertia
+        ixx="0.00195425558737089"
+        ixy="3.11844265051141E-06"
+        ixz="3.76108788631733E-08"
+        iyy="0.000406802262285126"
+        iyz="-6.62460540242866E-05"
+        izz="0.00178400389724863" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/elbow_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/elbow_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_right_joint"
+    type="revolute">
+    <origin
+      xyz="0 -0.16597 0"
+      rpy="0.19083 0 0" />
+    <parent
+      link="lower_bicep_right" />
+    <child
+      link="elbow_right" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="forearm_right">
+    <inertial>
+      <origin
+        xyz="0.000903956953788143 -0.0549583039429378 -0.000615705487273965"
+        rpy="0 0 0" />
+      <mass
+        value="0.147650502703712" />
+      <inertia
+        ixx="0.000114134079059838"
+        ixy="8.53653162045627E-08"
+        ixz="-8.57988731085453E-08"
+        iyy="8.57580825503249E-05"
+        iyz="1.38676158975273E-06"
+        izz="0.000161288764751938" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/forearm_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/forearm_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="forearm_joint_right"
+    type="revolute">
+    <origin
+      xyz="0.0007775 -0.17588 -0.004924"
+      rpy="-3.1416 -1.4912 -3.1416" />
+    <parent
+      link="elbow_right" />
+    <child
+      link="forearm_right" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wrist_right">
+    <inertial>
+      <origin
+        xyz="-0.00174123493846179 -0.0201770355385047 -0.00070854093116135"
+        rpy="0 0 0" />
+      <mass
+        value="0.0396774088963826" />
+      <inertia
+        ixx="6.21385948553506E-06"
+        ixy="-1.72978017813527E-07"
+        ixz="-3.69971721268733E-09"
+        iyy="4.22430935636149E-06"
+        iyz="-4.29091194927146E-08"
+        izz="6.49665909114042E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/wrist_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/wrist_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_joint_right"
+    type="revolute">
+    <origin
+      xyz="0.00054195 -0.11015 0"
+      rpy="3.1416 0 -3.0683" />
+    <parent
+      link="forearm_right" />
+    <child
+      link="wrist_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="shoulder_link_left">
+    <inertial>
+      <origin
+        xyz="-0.0659353116500655 -0.00030556113220026 0.00268201727405593"
+        rpy="0 0 0" />
+      <mass
+        value="0.244967847147866" />
+      <inertia
+        ixx="0.000175309571597301"
+        ixy="-4.9681547073878E-06"
+        ixz="-1.00652785389991E-06"
+        iyy="0.000194342756584183"
+        iyz="9.01843989819471E-07"
+        izz="0.000282431244223072" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/shoulder_link_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/shoulder_link_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="shoulder_joint_left"
+    type="revolute">
+    <origin
+      xyz="0.061791 0.68562 1.5983"
+      rpy="1.7195 0 -3.1416" />
+    <parent
+      link="Body" />
+    <child
+      link="shoulder_link_left" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="upper_bicep_left">
+    <inertial>
+      <origin
+        xyz="2.42930686815968E-05 -0.0712019079969899 0.00623567936620517"
+        rpy="0 0 0" />
+      <mass
+        value="0.31166104857089" />
+      <inertia
+        ixx="0.00021711093947791"
+        ixy="-9.62565671662657E-09"
+        ixz="-4.32372566723452E-09"
+        iyy="0.000233732893819241"
+        iyz="2.24559204998025E-07"
+        izz="0.000282971472575617" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/upper_bicep_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/upper_bicep_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="upper_bicep_joint_left"
+    type="revolute">
+    <origin
+      xyz="-0.072 0 0"
+      rpy="0 0 -0.0396" />
+    <parent
+      link="shoulder_link_left" />
+    <child
+      link="upper_bicep_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="lower_bicep_left">
+    <inertial>
+      <origin
+        xyz="-0.00222792975009037 -0.110234327650065 0.00222883572732563"
+        rpy="0 0 0" />
+      <mass
+        value="0.322694349979604" />
+      <inertia
+        ixx="0.000499533072657194"
+        ixy="-6.38986919600264E-07"
+        ixz="-2.11448159171085E-07"
+        iyy="0.000225426606354168"
+        iyz="4.42897190417115E-05"
+        izz="0.000351129453366693" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/lower_bicep_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/lower_bicep_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lower_bicep_joint_left"
+    type="revolute">
+    <origin
+      xyz="0 -0.078872 0.00649"
+      rpy="0 -0.048772 0" />
+    <parent
+      link="upper_bicep_left" />
+    <child
+      link="lower_bicep_left" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="elbow_left">
+    <inertial>
+      <origin
+        xyz="0.000934902579112051 -0.0981768256465745 -0.00183991845032977"
+        rpy="0 0 0" />
+      <mass
+        value="0.619496301101077" />
+      <inertia
+        ixx="0.00195404187524095"
+        ixy="-3.12818087653027E-06"
+        ixz="-4.81039900483333E-08"
+        iyy="0.000406783843710147"
+        iyz="-6.62849456666047E-05"
+        izz="0.00178379545432578" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/elbow_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/elbow_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="elbow_joint_left"
+    type="revolute">
+    <origin
+      xyz="0 -0.15513 0"
+      rpy="0.036956 0 0" />
+    <parent
+      link="lower_bicep_left" />
+    <child
+      link="elbow_left" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="forearm_left">
+    <inertial>
+      <origin
+        xyz="-0.000912376425615591 -0.0509428385942439 -0.000622968271877633"
+        rpy="0 0 0" />
+      <mass
+        value="0.147743262755097" />
+      <inertia
+        ixx="0.000114156584508891"
+        ixy="-8.78305200991494E-08"
+        ixz="8.4572989687032E-08"
+        iyy="8.5765743107491E-05"
+        iyz="1.3856005110522E-06"
+        izz="0.000161299855636694" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/forearm_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/forearm_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="forearm_left_joint"
+    type="revolute">
+    <origin
+      xyz="-0.0007774999725563 -0.179883400663702 -0.00492402137391595"
+      rpy="0 1.38052530313004 0" />
+    <parent
+      link="elbow_left" />
+    <child
+      link="forearm_left" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="wrist_left">
+    <inertial>
+      <origin
+        xyz="0.00174123363454304 -0.020177036909432 -0.000708547982410407"
+        rpy="0 0 0" />
+      <mass
+        value="0.0396773954897013" />
+      <inertia
+        ixx="6.21385824858795E-06"
+        ixy="1.72978082506382E-07"
+        ixz="3.69981460821489E-09"
+        iyy="4.2243086970329E-06"
+        iyz="-4.29092054131682E-08"
+        izz="6.49665731979543E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/wrist_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/wrist_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wrist_joint_left"
+    type="revolute">
+    <origin
+      xyz="-0.00054195 -0.10615 0"
+      rpy="0 0 -0.2757" />
+    <parent
+      link="forearm_left" />
+    <child
+      link="wrist_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="neck_link">
+    <inertial>
+      <origin
+        xyz="2.44110287539456E-14 0.0263208774927388 2.22044604925031E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.126175040674599" />
+      <inertia
+        ixx="8.27555077333761E-05"
+        ixy="5.30925702563437E-19"
+        ixz="-6.90908141457361E-11"
+        iyy="0.000117501706916794"
+        iyz="-2.57814849426602E-20"
+        izz="0.000117550416671383" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/neck_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/neck_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="neck_joint"
+    type="revolute">
+    <origin
+      xyz="-0.1051 0.68562 1.68"
+      rpy="1.5708 0 0.020051" />
+    <parent
+      link="Body" />
+    <child
+      link="neck_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="head">
+    <inertial>
+      <origin
+        xyz="0.000991744241927564 0.0958877295173339 -0.00640046453276655"
+        rpy="0 0 0" />
+      <mass
+        value="2.56822385057224" />
+      <inertia
+        ixx="0.00967500781191765"
+        ixy="9.79957388269475E-05"
+        ixz="0.000302201548853905"
+        iyy="0.00769699755911586"
+        iyz="-0.000444237801130295"
+        izz="0.0109247237456425" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/head.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://EVA/meshes/head.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="head_joint"
+    type="revolute">
+    <origin
+      xyz="0 0.065 0"
+      rpy="-3.1372 0 3.1416" />
+    <parent
+      link="neck_link" />
+    <child
+      link="head" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

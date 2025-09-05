@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/eva/eva.egg-info/PKG-INFO
+writing dependency_links to ../../build/eva/eva.egg-info/dependency_links.txt
+writing entry points to ../../build/eva/eva.egg-info/entry_points.txt
+writing requirements to ../../build/eva/eva.egg-info/requires.txt
+writing top-level names to ../../build/eva/eva.egg-info/top_level.txt
+reading manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+writing manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+running build
+running build_py
+copying eva/odom_publisher.py -> /home/divya/nav/build/eva/build/lib/eva
+running install
+running install_lib
+copying /home/divya/nav/build/eva/build/lib/eva/odom_publisher.py -> /home/divya/nav/install/eva/lib/python3.10/site-packages/eva
+byte-compiling /home/divya/nav/install/eva/lib/python3.10/site-packages/eva/odom_publisher.py to odom_publisher.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/divya/nav/install/eva/lib/python3.10/site-packages/eva-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/eva/eva.egg-info to /home/divya/nav/install/eva/lib/python3.10/site-packages/eva-0.0.0-py3.10.egg-info
+running install_scripts
+Installing odom_publisher script to /home/divya/nav/install/eva/lib/eva
+writing list of installed files to '/home/divya/nav/build/eva/install.log'

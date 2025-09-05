@@ -1,0 +1,21 @@
+[0.564s] Invoking command in '/home/divya/nav/src/eva': PYTHONPATH=/home/divya/nav/build/eva/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/divya/nav/install/eva/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/eva build --build-base /home/divya/nav/build/eva/build install --record /home/divya/nav/build/eva/install.log --single-version-externally-managed install_data
+[0.723s] running egg_info
+[0.723s] writing ../../build/eva/eva.egg-info/PKG-INFO
+[0.729s] writing dependency_links to ../../build/eva/eva.egg-info/dependency_links.txt
+[0.729s] writing entry points to ../../build/eva/eva.egg-info/entry_points.txt
+[0.730s] writing requirements to ../../build/eva/eva.egg-info/requires.txt
+[0.730s] writing top-level names to ../../build/eva/eva.egg-info/top_level.txt
+[0.731s] reading manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+[0.732s] writing manifest file '../../build/eva/eva.egg-info/SOURCES.txt'
+[0.732s] running build
+[0.732s] running build_py
+[0.733s] running install
+[0.733s] running install_lib
+[0.734s] running install_data
+[0.737s] running install_egg_info
+[0.740s] removing '/home/divya/nav/install/eva/lib/python3.10/site-packages/eva-0.0.0-py3.10.egg-info' (and everything under it)
+[0.741s] Copying ../../build/eva/eva.egg-info to /home/divya/nav/install/eva/lib/python3.10/site-packages/eva-0.0.0-py3.10.egg-info
+[0.741s] running install_scripts
+[0.755s] Installing odom_publisher script to /home/divya/nav/install/eva/lib/eva
+[0.755s] writing list of installed files to '/home/divya/nav/build/eva/install.log'
+[0.772s] Invoked command in '/home/divya/nav/src/eva' returned '0': PYTHONPATH=/home/divya/nav/build/eva/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/divya/nav/install/eva/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/eva build --build-base /home/divya/nav/build/eva/build install --record /home/divya/nav/build/eva/install.log --single-version-externally-managed install_data
